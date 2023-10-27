@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Resource</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Add Resource</h1>
+    <form method="POST" action="{{ url_for('add_resource') }}">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+        <label for="description">Description:</label>
+        <textarea name="description" id="description"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+    <a href="{{ url_for('index') }}">Back to Resource List</a>
+</body>
+</html>

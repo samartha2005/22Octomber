@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notifications</title>
+</head>
+<body bgcolor="#696A17 ">
+    <div id="notifications"></div>
+    <input id="message_input" autocomplete="off" />
+    <button onclick="sendNotification()">Send Notification</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='main2.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Item List</title>
+</head>
+<body bgcolor="#A786B3">
+    <h1>Item List</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item.name }} <a href="/delete/{{ item.id }}">Delete</a></li>
+        {% endfor %}
+    </ul>
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Item name" required>
+        <button type="submit">Add Item</button>
+    </form>
+</body>
+</html>

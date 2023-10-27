@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Session Example</title>
+</head>
+<body bgcolor="#D8D89F">
+    <h1>Hello, {{ user_data }}!</h1>
+    <form method="POST" action="/set_user_data">
+        <input type="text" name="user_data" required>
+        <button type="submit">Set User Data</button>
+    </form>
+</body>
+</html>

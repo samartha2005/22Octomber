@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Data Update</title>
+</head>
+<body bgcolor="#ADE271 ">
+    <p id="data">Data: <span id="data_value">0</span></p>
+    <button onclick="updateData()">Update Data</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.0.4/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='main1.js') }}"></script>
+</body>
+</html>
